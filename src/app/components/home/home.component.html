@@ -15,15 +15,17 @@
 
   <!-- Weather Info -->
   <div class="weather text-center">
-    <h3>{{ today | uppercase }}</h3>
-    <h1 class="temp-symbol">{{ currentTemp }}</h1>
-    <h2>{{ cityWeather.city["name"] }}</h2>
+    <h3 class="heading--secondary">{{ today | uppercase }}</h3>
+    <h1 class="temp-symbol heading">{{ currentTemp }}</h1>
     <img class="weather__icon" [src]="weatherIconSrc" alt="weather icon" />
-    <p>{{ weather }}</p>
-    <hr />
-    <div class="d-flex justify-content-between">
-      <p class="temp-symbol">{{ minTemp }}</p>
-      <p class="temp-symbol">{{ maxTemp }}</p>
+    <p class="heading--tertiary">{{ weather | uppercase }}</p>
+    <h2 class="heading--city mb-med">{{ cityWeather.city["name"] }}</h2>
+    <div class="mt-large">
+      <hr />
+      <div class="d-flex justify-content-between ">
+        <p class="text-size temp-symbol">{{ minTemp }}</p>
+        <p class="text-size temp-symbol">{{ maxTemp }}</p>
+      </div>
     </div>
   </div>
 </div>
