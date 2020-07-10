@@ -7,6 +7,10 @@ import { WeatherUpdateService } from "../../services/weather-update.service";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
+
+  /**
+   * Add switch case to toggle between different icons and backgrounds for the weather conditions
+   */
   
   cityWeather: any = {
     city: {
