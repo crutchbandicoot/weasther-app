@@ -66,6 +66,7 @@ input[type="checkbox"]:checked ~ .toggle-button-text {
 .weather{
 
   position: relative;
+  top: 4rem;
   &__icon{
     width: 5rem;
     height: auto;
