@@ -1,3 +1,5 @@
+
+
 .mt-lrg {
   margin-top: 5rem;
 }
@@ -7,6 +9,8 @@
   position: relative;
   width: 6rem;
   height: 2.9rem;
+  position: absolute;
+  right: 1.5rem;
 }
 
 input[type="checkbox"] {
@@ -61,6 +65,7 @@ input[type="checkbox"]:checked ~ .toggle-button-text {
 
 .weather{
 
+  position: relative;
   &__icon{
     width: 5rem;
     height: auto;
@@ -72,4 +77,29 @@ input[type="checkbox"]:checked ~ .toggle-button-text {
   margin: 0 auto;
 }
 
+.heading{
 
+  font-size: 7rem;
+
+  &--secondary{
+    font-size: 4rem;
+    font-weight: 100;
+  }
+
+  &--tertiary{
+    font-size: 2rem;
+  }
+
+  &--city{
+    font-size: 5rem;
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+
+.text-size{
+  font-size: 2.5rem;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,3 +7,19 @@
   padding: 0;
   box-sizing: border-box; 
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mt-med{
+  margin-top: 3rem;
+}
+
+.mt-large{
+  margin-top: 7.5rem;
+}
+
+.mb-med{
+  margin-bottom: 3rem;
+}
+
