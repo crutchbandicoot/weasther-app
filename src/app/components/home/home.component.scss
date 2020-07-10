@@ -2,11 +2,11 @@
   margin-top: 5rem;
 }
 
-:host {
+.host {
   display: block;
   position: relative;
-  width: 100px;
-  height: 50px;
+  width: 6rem;
+  height: 2.9rem;
 }
 
 input[type="checkbox"] {
@@ -16,10 +16,10 @@ input[type="checkbox"] {
 
 .toggle-button-switch {
   position: absolute;
-  top: -1px;
-  left: 2px;
-  width: 40px;
-  height: -webkit-fill-available;
+  top: -.1rem;
+  left: -.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #fff;
   border-radius: 100%;
   cursor: pointer;
@@ -31,8 +31,7 @@ input[type="checkbox"] {
 .toggle-button-text {
   overflow: hidden;
   background-color: #fc3164;
-  border-radius: 25px;
-  // box-shadow: 2px 2px 5px 0 rgba(50, 50, 50, 0.75);
+  border-radius: 2.5rem;
   transition: background-color 0.3s;
   height: 37px;
 }
@@ -52,7 +51,7 @@ input[type="checkbox"] {
 
 
 input[type="checkbox"]:checked ~ .toggle-button-switch {
-  left: 52px;
+  left: 4rem;
 }
 
 
@@ -63,11 +62,14 @@ input[type="checkbox"]:checked ~ .toggle-button-text {
 .weather{
 
   &__icon{
-    width: 60px;
+    width: 5rem;
     height: auto;
   }
 }
 
-
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
 
 

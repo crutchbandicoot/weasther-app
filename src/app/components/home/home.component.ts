@@ -7,8 +7,7 @@ import { WeatherUpdateService } from "../../services/weather-update.service";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  checked: boolean = false;
-
+  
   cityWeather: any = {
     city: {
       name: "",
@@ -37,6 +36,14 @@ export class HomeComponent implements OnInit {
   weather: string;
   weatherIcon: string;
   weatherIconSrc: any;
+
+  checked: boolean = false;
+
+  date: any = new Date();
+
+  day: any = this.date.getDay();
+  dayList: any = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  today: any = this.dayList[this.day];
 
   constructor(private weatherUpdate: WeatherUpdateService) {}
 
