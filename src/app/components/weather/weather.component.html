@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="float-right">
+        <input type="checkbox" id="toggle-button-checkbox" />
+        <label class="toggle-button-switch" for="toggle-button-checkbox"></label>
+        <div class="toggle-button-text">
+          <div class="toggle-button-text-on"></div>
+          <div class="toggle-button-text-off"></div>
+        </div>
+    </div>
+    <div class="weather">
+        <h1 class="temp-symbol">{{ currentTemp }}</h1>
+        <h2>{{ cityWeather.city["name"] }}</h2>
+    
+        <p class="temp-symbol">Min: {{ minTemp }}</p>
+        <p class="temp-symbol">Max: {{ maxTemp }}</p>
+        <p>{{ weather }}</p>
+        <img class="weather__icon" [src]="weatherIconSrc" alt="weather icon" />
+      </div>
+</div>

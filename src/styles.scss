@@ -1,13 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-
-.mb-small {
-    margin-bottom: 3rem;
-}
-
-.mb-med{
-    margin-bottom: 6rem;
-}
-
-.mb-lrg {
-    margin-bottom: 8rem;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
 }
