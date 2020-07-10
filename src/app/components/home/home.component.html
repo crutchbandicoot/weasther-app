@@ -1,0 +1,19 @@
+<div class="container mt-lrg">
+  <input type="checkbox" id="toggle-button-checkbox" (change)="changeTemp()" />
+  <label class="toggle-button-switch" for="toggle-button-checkbox"></label>
+  <div class="toggle-button-text">
+    <div class="toggle-button-text-on">{{ tempFormat.farenheit }}</div>
+    <div class="toggle-button-text-off">{{ tempFormat.celcius }}</div>
+  </div>
+  <!-- <button >&#8451;</button>
+    <button (click) = 'changeTempFarenheit()'>&#8457;</button> -->
+  <div class="weather">
+    <h1 class="temp-symbol">{{ currentTemp }}</h1>
+    <h2>{{ cityWeather.city["name"] }}</h2>
+
+    <p class="temp-symbol">Min: {{ minTemp }}</p>
+    <p class="temp-symbol">Max: {{ maxTemp }}</p>
+    <p>{{ weather }}</p>
+    <img class="weather__icon" [src]="weatherIconSrc" alt="weather icon" />
+  </div>
+</div>
