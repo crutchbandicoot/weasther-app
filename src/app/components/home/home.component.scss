@@ -74,33 +74,38 @@ input[type="checkbox"]:checked ~ .toggle-button-text {
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
-.heading{
+.day-heading{
+  position: relative;
+  top: 4.5rem;
+}
 
-  font-size: 7rem;
+// .heading{
 
-  &--secondary{
-    font-size: 4rem;
-    font-weight: 100;
-  }
+//   font-size: 7rem;
 
-  &--tertiary{
-    font-size: 2rem;
-  }
+//   &--secondary{
+//     font-size: 4rem;
+//     font-weight: 100;
+//   }
 
-  &--city{
-    font-size: 5rem;
-    position: fixed;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-  }
+//   &--tertiary{
+//     font-size: 2rem;
+//   }
+
+//   &--city{
+//     font-size: 5rem;
+//     position: fixed;
+//     left: 50%;
+//     top: 60%;
+//     transform: translate(-50%, -50%);
+//   }
   
-}
+// }
 
-.text-size{
-  font-size: 2.5rem;
-}
+// .text-size{
+//   font-size: 2.5rem;
+// }

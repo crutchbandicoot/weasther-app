@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-4">
   <!-- Toggle button -->
   <div class="host">
     <input
@@ -14,7 +14,12 @@
   </div>
 
   <!-- Weather Info -->
-  <div class="weather text-center ">
+  <h2 class="day-heading">{{ today | uppercase }}</h2>
+
+
+
+
+  <!-- <div class="weather text-center ">
     <h3 class="heading--secondary">{{ today | uppercase }}</h3>
     <h1 class="temp-symbol heading">{{ currentTemp }}</h1>
     <img class="weather__icon" [src]="weatherIconSrc" alt="weather icon" />
@@ -27,5 +32,5 @@
         <p class="text-size temp-symbol">{{ maxTemp }}</p>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
